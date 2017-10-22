@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://sprites/heroi/Vidas/vida.png" type="Texture" id=1]
+
+[node name="Vida" type="Sprite"]
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( -0.254938, 0.403956 )
+transform/scale = Vector2( 0.992735, 1.01358 )
+texture = ExtResource( 1 )
+
+

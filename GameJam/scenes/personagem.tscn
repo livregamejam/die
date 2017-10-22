@@ -1,0 +1,168 @@
+[gd_scene load_steps=27 format=1]
+
+[ext_resource path="res://scripts/personagem.gd" type="Script" id=1]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk01.png" type="Texture" id=2]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk02.png" type="Texture" id=3]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk03.png" type="Texture" id=4]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk04.png" type="Texture" id=5]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk05.png" type="Texture" id=6]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk06.png" type="Texture" id=7]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk07.png" type="Texture" id=8]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk08.png" type="Texture" id=9]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk09.png" type="Texture" id=10]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk10.png" type="Texture" id=11]
+[ext_resource path="res://sprites/heroi/Andando/p1_walk11.png" type="Texture" id=12]
+[ext_resource path="res://sprites/heroi/Parado/p1_stand.png" type="Texture" id=13]
+[ext_resource path="res://sprites/Item/raygunBig.png" type="Texture" id=14]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -15.0358, 19.7713, -19.0501, 29.941, -27.8818, 29.941, -27.3465, 25.659, -26.276, 17.3626 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 13.3325, 16.2921, 13.3325, 30.2086, 3.43035, 30.2086, 2.35986, 21.377 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -30.2904, 5.05189, -30.2904, 9.60151, -32.9666, 11.7425, -35.3753, 8.79864, -35.3753, 5.31952 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -28.9523, 2.64327, -30.2904, 5.05189, -35.3753, 5.31952, -35.3753, -0.0329819, -33.2343, -3.24448 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -26.5436, -0.0329819, -28.9523, 2.64327, -33.2343, -3.24448, -30.558, -6.18835, -26.5436, -9.66748 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -15.0358, 19.7713, -26.276, 17.3626, -25.7408, 12.2778 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 21.6288, -2.97685, 24.5727, 1.8404, 24.5727, 8.79864, 22.4317, 10.9396, 19.2202, 9.86914, 17.6145, 2.64327, 17.3468, -8.06173 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 17.3468, -8.06173, 17.6145, 2.64327, 17.3468, 11.2073, 13.3325, 16.2921, 2.35986, 21.377, -5.40127, 21.6446, -15.0358, 19.7713, -25.7408, 12.2778, -26.5436, -0.0329819, -26.5436, -9.66748 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 16.8116, -34.8242, 17.3468, -8.06173, -26.5436, -9.66748, -26.276, -13.6819 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 16.8116, -34.8242, -26.276, -13.6819, -26.276, -19.0343 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -5.93652, -54.0932, 2.09222, -52.7551, 8.78285, -49.0083, 15.7411, -42.0501, 16.8116, -34.8242, -26.276, -19.0343, -26.276, -27.3307, -25.7408, -35.3595, -24.6703, -41.5148, -20.1206, -47.4026, -16.3739, -51.1493, -12.6271, -53.558 )
+
+[sub_resource type="SpriteFrames" id=12]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "AndandoDireita",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "Parado",
+"speed": 5.0
+} ]
+
+[node name="personagem" type="KinematicBody2D"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 4 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 5 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 6 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 7 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 8 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 9 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/8/trigger = false
+shapes/9/shape = SubResource( 10 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 11 )
+shapes/10/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/10/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+script/script = ExtResource( 1 )
+vel = 250
+Smoothness = 0.1
+
+[node name="heroiAnimacoes" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( -4, -16 )
+frames = SubResource( 12 )
+animation = "Parado"
+
+[node name="posArma" type="Position2D" parent="."]
+
+transform/pos = Vector2( 62.3568, -2.53914 )
+
+[node name="arma" type="Sprite" parent="."]
+
+transform/pos = Vector2( 35.0401, -1.74666 )
+texture = ExtResource( 14 )
+
+[node name="colyn" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -27.8818, 29.941, -19.0501, 29.941, -15.0358, 19.7713, -5.40127, 21.6446, 2.35986, 21.377, 3.43035, 30.2086, 13.3325, 30.2086, 13.3325, 16.2921, 17.3468, 11.2073, 17.6145, 2.64327, 19.2202, 9.86914, 22.4317, 10.9396, 24.5727, 8.79864, 24.5727, 1.8404, 21.6288, -2.97685, 17.3468, -8.06173, 16.8116, -34.8242, 15.7411, -42.0501, 8.78285, -49.0083, 2.09222, -52.7551, -5.93652, -54.0932, -12.6271, -53.558, -16.3739, -51.1493, -20.1206, -47.4026, -24.6703, -41.5148, -25.7408, -35.3595, -26.276, -27.3307, -26.276, -19.0343, -26.276, -13.6819, -26.5436, -9.66748, -30.558, -6.18835, -33.2343, -3.24448, -35.3753, -0.0329819, -35.3753, 5.31952, -35.3753, 8.79864, -32.9666, 11.7425, -30.2904, 9.60151, -30.2904, 5.05189, -28.9523, 2.64327, -26.5436, -0.0329819, -25.7408, 12.2778, -26.276, 17.3626, -27.3465, 25.659 )
+shape_range = Vector2( 0, 10 )
+trigger = false
+
+[node name="score" type="Label" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[connection signal="input_event" from="." to="." method="_on_personagem_input_event"]
+
+

@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://sprites/Mapas_Itens/Mushroom expansion/Backgrounds/bg_shroom.png" type="Texture" id=1]
+
+[node name="tela_ganhou" type="StaticBody2D"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 515, 355 )
+texture = ExtResource( 1 )
+
+

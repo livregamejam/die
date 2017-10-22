@@ -1,0 +1,483 @@
+[gd_scene load_steps=35 format=1]
+
+[ext_resource path="res://scripts/cenario3.gd" type="Script" id=1]
+[ext_resource path="res://sprites/Mapas_Itens/Mushroom expansion/Backgrounds/bg_grasslands.png" type="Texture" id=2]
+[ext_resource path="res://scenes/espinho.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sprites/Mapas_Itens/Mushroom expansion/PNG/shroomBrownMid.png" type="Texture" id=4]
+[ext_resource path="res://sprites/Mapas_Itens/Mushroom expansion/PNG/shroomBrownMid_partinha.png" type="Texture" id=5]
+[ext_resource path="res://sprites/Mapas_Itens/Mushroom expansion/PNG/shroomBrownLeft.png" type="Texture" id=6]
+[ext_resource path="res://sprites/Mapas_Itens/Mushroom expansion/PNG/shroomBrownRight.png" type="Texture" id=7]
+[ext_resource path="res://sprites/Mapas_Itens/Tiles/grassHalfMid.png" type="Texture" id=8]
+[ext_resource path="res://scenes/fim_fase.tscn" type="PackedScene" id=9]
+[ext_resource path="res://sprites/Mapas_Itens/Tiles/boxAlt.png" type="Texture" id=10]
+[ext_resource path="res://sprites/Mapas_Itens/Tiles/ropeAttached - pequeno.png" type="Texture" id=11]
+[ext_resource path="res://sprites/Mapas_Itens/Mushroom expansion/PNG/bush.png" type="Texture" id=12]
+[ext_resource path="res://scenes/personagem.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/chave_laranja.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/ponte_tora.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/portinha_laranja.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/botao_verde.tscn" type="PackedScene" id=17]
+[ext_resource path="res://sprites/Mapas_Itens/Tiles/ropeAttached.png" type="Texture" id=18]
+[ext_resource path="res://sprites/Mapas_Itens/Tiles/ropeVertical.png" type="Texture" id=19]
+[ext_resource path="res://sprites/Mapas_Itens/Items/weight.png" type="Texture" id=20]
+
+[sub_resource type="RectangleShape2D" id=16]
+
+custom_solver_bias = 0.0
+extents = Vector2( 101.692, 16.8624 )
+
+[sub_resource type="RectangleShape2D" id=17]
+
+custom_solver_bias = 0.0
+extents = Vector2( 550.221, 10 )
+
+[sub_resource type="RectangleShape2D" id=18]
+
+custom_solver_bias = 0.0
+extents = Vector2( 33.8213, 12.9592 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 591.527, 325.962, 591.527, 319.761, 597.727, 318.986, 597.727, 321.699, 596.565, 331 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 601.99, 321.699, 601.99, 319.374, 607.803, 319.374, 607.803, 326.349, 602.378, 331.775 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 596.565, 337.588, 596.565, 331, 597.727, 321.699, 601.99, 321.699, 602.378, 331.775, 601.99, 337.588 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 635.318, 478.58, 578.738, 476.676, 575.638, 471.251, 575.638, 410.832, 580.676, 408.507, 630.28, 407.243, 641.888, 407.609, 645.782, 413.831, 645.394, 472.379 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 601.99, 337.588, 629.505, 337.588, 635.318, 342.626, 635.318, 401.043, 630.28, 407.243, 596.565, 337.588 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 572.538, 408.507, 567.887, 405.794, 565.174, 401.531, 566.337, 343.013, 569.05, 338.75, 573.7, 337.588, 596.565, 337.588, 630.28, 407.243, 580.676, 408.507 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 578.738, 476.676, 635.318, 478.58, 637.643, 482.068, 637.643, 540.067, 632.993, 545.88, 599.665, 547.817, 581.838, 546.978, 572.538, 546.203, 567.5, 540.232, 567.887, 480.164 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 578.738, 476.676, 567.887, 480.164, 572.15, 476.288 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 402.923, 623.444, 414.817, 675.385, 409.266, 682.918, 352.965, 682.521, 346.225, 675.781, 359.309, 623.048 )
+
+[sub_resource type="RectangleShape2D" id=15]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.63123, 151.43 )
+
+[sub_resource type="CanvasItemMaterial" id=28]
+
+shader/shading_mode = 0
+
+[node name="cenario3" type="Node"]
+
+[node name="cenario3_static" type="StaticBody2D" parent="."]
+
+input/pickable = false
+shapes/0/shape = SubResource( 16 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1.21307, 98.4576, 298.618 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 16 )
+shapes/1/transform = Matrix32( 2.02313, 0, 0, 1.21307, 550.081, 298.618 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 16 )
+shapes/2/transform = Matrix32( 0.684579, 0, 0, 1.17079, 965.129, 299.458 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 16 )
+shapes/3/transform = Matrix32( 0.692022, 0, 0, 0.234599, 826.143, 315.469 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 17 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 504.243, 692.905 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 18 )
+shapes/5/transform = Matrix32( 1, 0, 0, 33.1758, -7.33963, 360.272 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 18 )
+shapes/6/transform = Matrix32( 0.757676, 0, 0, 33.1758, 1024.05, 358.493 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 19 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 20 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/8/trigger = false
+shapes/9/shape = SubResource( 21 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 22 )
+shapes/10/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/10/trigger = false
+shapes/11/shape = SubResource( 23 )
+shapes/11/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/11/trigger = false
+shapes/12/shape = SubResource( 24 )
+shapes/12/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/12/trigger = false
+shapes/13/shape = SubResource( 25 )
+shapes/13/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/13/trigger = false
+shapes/14/shape = SubResource( 26 )
+shapes/14/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/14/trigger = false
+shapes/15/shape = SubResource( 27 )
+shapes/15/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/15/trigger = false
+shapes/16/shape = SubResource( 15 )
+shapes/16/transform = Matrix32( 0.504431, 0, 0, 1, 383.186, 470.624 )
+shapes/16/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script/script = ExtResource( 1 )
+
+[node name="ceu" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 510.52, 372.456 )
+texture = ExtResource( 2 )
+
+[node name="espinho 2" parent="cenario3_static" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 508.187, 244.235 )
+
+[node name="espinho 3" parent="cenario3_static" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 578.245, 244.235 )
+
+[node name="espinho 4" parent="cenario3_static" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 791.006, 277.581 )
+
+[node name="espinho 5" parent="cenario3_static" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 860.477, 277.581 )
+
+[node name="chao" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 32, 314 )
+texture = ExtResource( 4 )
+
+[node name="chao11" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 930, 314 )
+texture = ExtResource( 4 )
+
+[node name="chao12" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 990, 314 )
+texture = ExtResource( 4 )
+
+[node name="chao9" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 791, 315.489 )
+texture = ExtResource( 5 )
+
+[node name="chao1" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 377, 314 )
+texture = ExtResource( 6 )
+
+[node name="chao2" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 446, 314 )
+texture = ExtResource( 4 )
+
+[node name="chao3" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 584, 314 )
+texture = ExtResource( 4 )
+
+[node name="chao4" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 515, 314 )
+texture = ExtResource( 4 )
+
+[node name="chao5" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 722, 314 )
+texture = ExtResource( 4 )
+
+[node name="chao6" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 653, 314 )
+texture = ExtResource( 4 )
+
+[node name="chao7" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 168, 314 )
+texture = ExtResource( 7 )
+
+[node name="chao8" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 100, 314 )
+texture = ExtResource( 4 )
+
+[node name="grama" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 35, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama1" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 726, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama2" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 657, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama3" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 933, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama4" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 589, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama5" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 1001, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama6" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 519, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama7" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 864, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama8" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 450, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama9" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 795, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama10" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 380, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama11" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 311, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama12" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 242, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama13" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 172, 718 )
+texture = ExtResource( 8 )
+
+[node name="grama14" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 103, 718 )
+texture = ExtResource( 8 )
+
+[node name="chao10" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 859.997, 315.522 )
+texture = ExtResource( 5 )
+
+[node name="fim_fase" parent="cenario3_static" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 959.048, 637.502 )
+
+[node name="caixa" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 600.414, 372.672 )
+texture = ExtResource( 10 )
+
+[node name="prendedor" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 600.477, 328.503 )
+texture = ExtResource( 11 )
+
+[node name="caixa2" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 602.251, 511.076 )
+texture = ExtResource( 10 )
+
+[node name="caixa3" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 610.489, 442.347 )
+texture = ExtResource( 10 )
+
+[node name="arbusto" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 230.797, 647.322 )
+texture = ExtResource( 12 )
+
+[node name="personagem" parent="cenario3_static" instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 77.8602, 246.871 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cenario3_static"]
+
+transform/pos = Vector2( 98.4576, 298.618 )
+transform/scale = Vector2( 1, 1.21307 )
+shape = SubResource( 16 )
+trigger = false
+_update_shape_index = 0
+
+[node name="CollisionShape2D1" type="CollisionShape2D" parent="cenario3_static"]
+
+transform/pos = Vector2( 550.081, 298.618 )
+transform/scale = Vector2( 2.02313, 1.21307 )
+shape = SubResource( 16 )
+trigger = false
+_update_shape_index = 1
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="cenario3_static"]
+
+transform/pos = Vector2( 965.129, 299.458 )
+transform/scale = Vector2( 0.684579, 1.17079 )
+shape = SubResource( 16 )
+trigger = false
+_update_shape_index = 2
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="cenario3_static"]
+
+transform/pos = Vector2( 826.143, 315.469 )
+transform/scale = Vector2( 0.692022, 0.234599 )
+shape = SubResource( 16 )
+trigger = false
+_update_shape_index = 3
+
+[node name="CollisionShape2D 2" type="CollisionShape2D" parent="cenario3_static"]
+
+transform/pos = Vector2( 504.243, 692.905 )
+shape = SubResource( 17 )
+trigger = false
+_update_shape_index = 4
+
+[node name="CollisionShape2D 3" type="CollisionShape2D" parent="cenario3_static"]
+
+transform/pos = Vector2( -7.33963, 360.272 )
+transform/scale = Vector2( 1, 33.1758 )
+shape = SubResource( 18 )
+trigger = false
+_update_shape_index = 5
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="cenario3_static"]
+
+transform/pos = Vector2( 1024.05, 358.493 )
+transform/scale = Vector2( 0.757676, 33.1758 )
+shape = SubResource( 18 )
+trigger = false
+_update_shape_index = 6
+
+[node name="chave_laranja" parent="cenario3_static" instance=ExtResource( 14 )]
+
+material/material = SubResource( 28 )
+transform/pos = Vector2( 821.256, 183.692 )
+
+[node name="ponte_tora" parent="cenario3_static" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( 271.477, 277.682 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="cenario3_static"]
+
+build_mode = 0
+polygon = Vector2Array( 591.527, 319.761, 591.527, 325.962, 596.565, 331, 596.565, 337.588, 573.7, 337.588, 569.05, 338.75, 566.337, 343.013, 565.174, 401.531, 567.887, 405.794, 572.538, 408.507, 580.676, 408.507, 575.638, 410.832, 575.638, 471.251, 578.738, 476.676, 572.15, 476.288, 567.887, 480.164, 567.5, 540.232, 572.538, 546.203, 581.838, 546.978, 599.665, 547.817, 632.993, 545.88, 637.643, 540.067, 637.643, 482.068, 635.318, 478.58, 645.394, 472.379, 645.782, 413.831, 641.888, 407.609, 630.28, 407.243, 635.318, 401.043, 635.318, 342.626, 629.505, 337.588, 601.99, 337.588, 602.378, 331.775, 607.803, 326.349, 607.803, 319.374, 601.99, 319.374, 601.99, 321.699, 597.727, 321.699, 597.727, 318.986 )
+shape_range = Vector2( 7, 14 )
+trigger = false
+
+[node name="portinha_laranja" parent="cenario3_static" instance=ExtResource( 16 )]
+
+transform/pos = Vector2( 604.589, 613.604 )
+
+[node name="botao_verde" parent="cenario3_static" instance=ExtResource( 17 )]
+
+transform/pos = Vector2( 962.39, 244.501 )
+
+[node name="colyn_pedra" type="CollisionPolygon2D" parent="cenario3_static"]
+
+build_mode = 0
+polygon = Vector2Array( 359.309, 623.048, 346.225, 675.781, 352.965, 682.521, 409.266, 682.918, 414.817, 675.385, 402.923, 623.444 )
+shape_range = Vector2( 15, 15 )
+trigger = false
+
+[node name="corda" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 380.677, 353.653 )
+texture = ExtResource( 18 )
+
+[node name="corda1" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 380.677, 421.63 )
+texture = ExtResource( 19 )
+
+[node name="corda2" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 380.677, 617.887 )
+texture = ExtResource( 19 )
+
+[node name="corda3" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 380.677, 647.365 )
+texture = ExtResource( 20 )
+
+[node name="corda4" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 380.677, 557.825 )
+texture = ExtResource( 19 )
+
+[node name="corda5" type="Sprite" parent="cenario3_static"]
+
+transform/pos = Vector2( 380.677, 488.63 )
+texture = ExtResource( 19 )
+
+[node name="colyn_corda" type="CollisionShape2D" parent="cenario3_static"]
+
+transform/pos = Vector2( 383.186, 470.624 )
+transform/scale = Vector2( 0.504431, 1 )
+shape = SubResource( 15 )
+trigger = false
+_update_shape_index = 16
+
+[node name="area_corda" type="Area2D" parent="cenario3_static"]
+
+input/pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+

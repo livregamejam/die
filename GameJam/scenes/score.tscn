@@ -1,0 +1,18 @@
+[gd_scene format=1]
+
+[node name="score" type="RichTextLabel"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1106.0
+margin/bottom = 508.0
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+
