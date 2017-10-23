@@ -9,7 +9,7 @@
 [ext_resource path="res://scenes/botao_verde.tscn" type="PackedScene" id=7]
 [ext_resource path="res://sprites/Item/signRight.tex" type="Texture" id=8]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
+[sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 841.445, 463.74, 848.796, 474.767, 851.001, 496.084, 851.001, 515.932, 851.001, 643.838, 803.955, 644.573, 803.22, 496.819, 803.22, 480.647, 806.161, 470.356, 816.452, 460.8, 823.803, 457.859, 832.624, 458.594 )
@@ -34,7 +34,7 @@ extents = Vector2( 31.7096, 10 )
 [node name="cenario1_static" type="StaticBody2D" parent="."]
 
 input/pickable = false
-shapes/0/shape = SubResource( 1 )
+shapes/0/shape = SubResource( 5 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 4.51251 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 2 )

@@ -4,12 +4,12 @@
 [ext_resource path="res://sprites/Mapas_Itens/Tiles/boxCoin_disabled.png" type="Texture" id=2]
 [ext_resource path="res://sprites/Mapas_Itens/Tiles/lock_red.png" type="Texture" id=3]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 52.7549 )
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 5.866 )
@@ -17,7 +17,7 @@ extents = Vector2( 10, 5.866 )
 [node name="portinha_laranja" type="StaticBody2D"]
 
 input/pickable = true
-shapes/0/shape = SubResource( 2 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1.31659, -23.3181, 0.160976 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -32,14 +32,14 @@ script/script = ExtResource( 1 )
 
 transform/pos = Vector2( -23.3181, 0.160976 )
 transform/scale = Vector2( 1, 1.31659 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
 [node name="portinha_laranja_area" type="Area2D" parent="."]
 
 input/pickable = true
-shapes/0/shape = SubResource( 1 )
+shapes/0/shape = SubResource( 2 )
 shapes/0/transform = Matrix32( 3.5594, 0, 0, 5.76333, -1.39405, -35.4166 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -61,7 +61,7 @@ texture = ExtResource( 3 )
 
 transform/pos = Vector2( -1.39405, -35.4166 )
 transform/scale = Vector2( 3.5594, 5.76333 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 0
 
